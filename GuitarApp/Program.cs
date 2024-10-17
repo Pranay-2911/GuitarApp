@@ -21,7 +21,7 @@ namespace GuitarApp
             List<Guitar> listOfGuitars = tester.FindGuitar();
             if (listOfGuitars != null && listOfGuitars.Count > 0)  
             {
-                Console.WriteLine("----Similar Guitars with your given specifications----");
+                Console.WriteLine("============= Similar Guitars with your given Details =============");
                 foreach (Guitar a in listOfGuitars)
                 {
                     Console.WriteLine(a.PrintDetails());  
@@ -29,7 +29,7 @@ namespace GuitarApp
             }
             else
             {
-                Console.WriteLine("No guitars matched your specifications.");
+                Console.WriteLine("No guitars matched your Details.");
             }
         }
     }
