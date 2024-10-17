@@ -33,12 +33,12 @@ namespace GuitarApp.Models
         {
             List<Guitar> similarGuitaras = new List<Guitar>();
 
-            foreach (Guitar g in guitars)
+            foreach (Guitar guitar in guitars)
             {
-                GuitarSpec specs = g.GetSpec();
-                if (g.GetSpec().Matche(searchGuitar))
+                GuitarSpec specs = guitar.GetSpec();
+                if (guitar.GetSpec().Matche(searchGuitar))
                 {
-                    similarGuitaras.Add(g);
+                    similarGuitaras.Add(guitar);
                 }
 
 
