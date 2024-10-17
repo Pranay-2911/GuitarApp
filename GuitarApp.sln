@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarApp", "GuitarApp\GuitarApp.csproj", "{F1880FD7-73D0-431C-AC8D-B7DA89DF9F74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1880FD7-73D0-431C-AC8D-B7DA89DF9F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1880FD7-73D0-431C-AC8D-B7DA89DF9F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1880FD7-73D0-431C-AC8D-B7DA89DF9F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1880FD7-73D0-431C-AC8D-B7DA89DF9F74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31C8CB03-2C0D-4D94-A362-F8FC6BCA7329}
+	EndGlobalSection
+EndGlobal
