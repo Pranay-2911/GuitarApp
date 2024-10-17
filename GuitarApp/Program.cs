@@ -1,4 +1,6 @@
-﻿using GuitarApp.Models;
+﻿using GuitarApp.Exceptions;
+using GuitarApp.Models;
+using GuitarApp.TestingGuitar;
 using GuitarApp.Types;
 
 namespace GuitarApp
@@ -18,18 +20,21 @@ namespace GuitarApp
             inventory.AddGuitar("8", 11000, Builder.COLLINGS, "model2", 8, Types.Types.ELECTRIC, Wood.ALDER, Wood.ALDER);
 
             FindGuitarTester tester = new FindGuitarTester();
-            List<Guitar> listOfGuitars = tester.FindGuitar();
-            if (listOfGuitars != null && listOfGuitars.Count > 0)  
+            try
             {
-                Console.WriteLine("============= Similar Guitars with your given Details =============");
-                foreach (Guitar a in listOfGuitars)
+                List<Guitar> listOfGuitars = tester.FindGuitar();
+                if (listOfGuitars != null && listOfGuitars.Count > 0)
                 {
-                    Console.WriteLine(a.PrintDetails());  
+                    Console.WriteLine("============= Similar Guitars with your given Details =============");
+                    foreach (Guitar a in listOfGuitars)
+                    {
+                        Console.WriteLine(a.PrintDetails());
+                    }
                 }
             }
-            else
+            catch (NoGuitarFounndException ng)
             {
-                Console.WriteLine("No guitars matched your Details.");
+                Console.WriteLine(ng.Message);
             }
         }
     }
